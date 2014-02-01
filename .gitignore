@@ -1,0 +1,14 @@
+# JetBrains IDEs
+.idea/
+
+# Vagrant
+.vagrant/
+
+# Berkshelf
+Berksfile.lock
+
+# Bundler
+Gemfile.lock
+
+# ChefSpec Coverage Reporter
+coverage/
