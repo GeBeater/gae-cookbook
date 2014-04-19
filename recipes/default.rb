@@ -15,6 +15,7 @@ bash 'extract_module' do
   code <<-EOH
     mkdir -p #{extract_path}
     unzip #{cache_file_path} -d #{extract_path}
+    rm -f /opt/google_appengine
     ln -s #{extract_path}/google_appengine /opt/google_appengine
     EOH
   not_if { ::File.exists?(extract_path) }
